@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+/* INICIO */
+.gridContainer {  
+    display: grid;
+    grid-template-rows: 8vh 92vh;
+    background-image:url("/images/inicio.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 30%;
+    /* grid-template-columns: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    grid-template-rows: 1.4fr 0.8fr 0.8fr; */
+}
+
+.header{
+    display: flex;
+    justify-content: end;
+}
+.header ul{
+    display: flex;
+    width: 15vw;
+    height: 8vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header li{
+    display: inline-block;
+}
+
+.header li:hover{
+    color: rgba(0, 0, 0, 0.302) ;
+    scale: 1.1;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 50% 30% 20%;
+    z-index: 1;
+}
+
+.containerTitle{
+    text-align: center;
+    margin: auto;
+}
+
+.h1{
+    margin-top: 10vh;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.containerOptions{
+    display: grid;
+    grid-template-columns: 1fr 7.5fr 1fr;
+}
+
+.containerBoxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.containerBox{
+    margin: auto;
+    font-size: 3.5vh;
+    font-weight: 500;
+    border: #fff49e44 1.5px solid;
+    border-radius: 8px;
+    width: 24vw;
+    height: 10vh;
+    background-color:#fff49e1c ;
+    display: grid;
+}
+
+.containerBox:hover{
+    background-color:#fff49e31 ;
+    scale: 1.05;
+}
+
+/* HOW TO AFFECT A PARENT HOVERING A CHILD? */
+.containerBox:hover > .gridContainer{
+    background-image:url("/images/meditate.jpg");
+}
+
+.containerBox p{
+    align-self: center;
+    /* color: rgb(255, 255, 255); */
+    /* text-shadow: 1px 1px 2px rgb(186, 186, 186), 0 0 1em rgb(31, 158, 78), 0 0 0.2em rgb(255, 13, 0); */
+    text-shadow: 1px 1px 1px rgb(186, 186, 186), -1px -1px 2px rgb(186, 186, 186)
+}
+
+.containerStart{
+    text-align: center;
+    font-size: 7vh;
+    font-weight: 600;
+} 
+
+.containerStart p{
+    display: inline-block;
+}
+
+.containerStart p:hover{
+    color: rgba(0, 0, 0, 0.302) ;
+    scale: 1.1;
+}
+
+.arrow{
+    margin: auto;
+}
+.arrow button{
+    height: 5vh;
+    width: 4vw;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow button:hover{
+    scale: 1.3;
+}
+
+.button1{
+    background-image: url("/images/back_arrow_5821.png");
+}
+
+.button2{
+    background-image: url("/images/forwardarrow_haciaadelante_4836.png");
+}
+
+/* SIGN IN */
+
+
+
+
