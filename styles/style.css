@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -14,10 +14,10 @@
  */
 
 /* INICIO */
-.gridContainer {  
+.gridContainer {
     display: grid;
     grid-template-rows: 8vh 92vh;
-    background-image:url("/images/inicio--img.jpg");
+    background-image: url("/images/inicio--img.jpg");
     height: 100vh;
     background-size: cover;
     background-position: 50% 30%;
@@ -25,11 +25,12 @@
     grid-template-rows: 1.4fr 0.8fr 0.8fr; */
 }
 
-.header{
+.header {
     display: flex;
     justify-content: end;
 }
-.header ul{
+
+.header ul {
     display: flex;
     width: 15vw;
     height: 8vh;
@@ -37,44 +38,44 @@
     align-items: center;
 }
 
-.header li{
+.header li {
     display: inline-block;
 }
 
-.header li:hover{
-    color: rgba(0, 0, 0, 0.302) ;
+.header li:hover {
+    color: rgba(0, 0, 0, 0.302);
     scale: 1.1;
 }
 
-.main{
+.main {
     display: grid;
     grid-template-rows: 50% 30% 20%;
     z-index: 1;
 }
 
-.containerTitle{
+.containerTitle {
     text-align: center;
     margin: auto;
 }
 
-.h1{
+.h1 {
     margin-top: 10vh;
     font-size: 50px;
     font-weight: 800;
 }
 
-.containerOptions{
+.containerOptions {
     display: grid;
     grid-template-columns: 1fr 7.5fr 1fr;
 }
 
-.containerBoxes{
+.containerBoxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
 
-.containerBox{
+.containerBox {
     margin: auto;
     font-size: 3.5vh;
     font-weight: 500;
@@ -82,46 +83,48 @@
     border-radius: 8px;
     width: 24vw;
     height: 10vh;
-    background-color:#ffd2d230 ;
+    background-color: #ffd2d230;
     display: grid;
 }
 
-.containerBox:hover{
-    background-color:#ffd2d241 ;
+.containerBox:hover {
+    background-color: #ffd2d241;
     scale: 1.01;
 }
 
 /* HOW TO AFFECT A PARENT HOVERING A CHILD? */
-.containerBox:hover > .gridContainer{
-    background-image:url("/images/meditate.jpg");
+.containerBox:hover>.gridContainer {
+    background-image: url("/images/meditate.jpg");
 }
 
-.containerBox p{
+.containerBox p {
     align-self: center;
     /* color: rgb(255, 255, 255); */
     /* text-shadow: 1px 1px 2px rgb(186, 186, 186), 0 0 1em rgb(31, 158, 78), 0 0 0.2em rgb(255, 13, 0); */
     text-shadow: 1px 1px 1px #ffd2d2, -1px -1px 2px #ffd2d2
 }
 
-.containerStart{
+.containerStart {
     text-align: center;
     font-size: 7vh;
     font-weight: 600;
-} 
+}
 
-.containerStart p{
+.containerStart p {
     display: inline-block;
     text-shadow: 1px 1px 1px #ffd2d2;
 }
-.containerStart p:hover{
-    color: #00008bce ;
+
+.containerStart p:hover {
+    color: #00008bce;
     scale: 1.1;
 }
 
-.arrow{
+.arrow {
     margin: auto;
 }
-.arrow button{
+
+.arrow button {
     height: 5vh;
     width: 4vw;
     border: none;
@@ -130,29 +133,30 @@
     background-position: center;
 }
 
-.arrow button:hover{
+.arrow button:hover {
     scale: 1.05;
 }
 
-.button1{
+.button1 {
     background-image: url("/images/back_arrow_5821.png");
 }
 
-.button2{
+.button2 {
     background-image: url("/images/forwardarrow_haciaadelante_4836.png");
 }
 
 /* SIGN IN */
-.header-Sign{
+.header-Sign {
     height: 8vh;
 }
-.main-Sign{
+
+.main-Sign {
     display: grid;
     grid-template-columns: 55% 45%;
     height: 92vh;
 }
 
-.main-Sign__info{
+.main-Sign__info {
     display: flex;
     background-image: url("/images/main-sign__info--img2.jpg");
     height: 100%;
@@ -160,21 +164,22 @@
     background-position: 50% 50%;
 }
 
-.main-Sign__text{
+.main-Sign__text {
     margin: auto;
     width: 75%;
     height: 60%;
-    background-color:#fce7e766;
+    background-color: #fce7e766;
 }
 
-.main-Sign__square{
+.main-Sign__square {
     margin: 10% 20% 20% 20%;
 }
 
-.main-Sign__container{
+.main-Sign__container {
     display: flex;
 }
-.main-Sign__form{
+
+.main-Sign__form {
     margin: auto;
     width: 75%;
     height: 70%;
@@ -184,15 +189,16 @@
     padding: 4vh 4vw;
 }
 
-.main-Sign__form--description{
+.main-Sign__form--description {
     margin: 2vh 0;
     font-size: 0.85em;
 }
 
-.main-Sign__label{
+.main-Sign__label {
     margin: 1vh 0.5vw;
 }
-.main-Sign__input{
+
+.main-Sign__input {
     border: 1px solid #ffd2d2;
     /* #87CEEB; */
     border-radius: 3px;
@@ -200,30 +206,140 @@
     padding: 1vh 0;
 }
 
-.main-Sign__help{
+.main-Sign__help {
     display: flex;
     justify-content: space-between;
     font-size: 0.75em;
     margin: 1vh 0.2vw;
 }
 
-.main-Sign__other-option, .main-Sign__create-account{
+.main-Sign__other-option,
+.main-Sign__create-account {
     margin: auto;
 }
 
-.main-Sign__social-media{
+.main-Sign__social-media {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
 
 }
 
-.main-Sign__social-media a{
+.main-Sign__social-media a {
     text-decoration: none;
 }
 
-.main-Sign__social-media i{
+.main-Sign__social-media i {
     width: 1vw;
 }
 
+/* HOME */
+.grid-container-home {
+    display: grid;
+    grid-template-rows: 8vh 100vh 30vh;
+}
 
+.header-Home {
+    display: grid;
+    grid-template-columns: 20vw 50vw 30vw;
+    background-color: #ffd2d2;
+}
+
+/* .header-Home__start{
+
+} */
+
+.container-Home {
+    display: grid;
+    grid-template-columns: 10vw 90vw;
+    background-color: rosybrown;
+}
+
+.aside-Home {
+    background-color: palegoldenrod;
+}
+/* 
+.footer {
+    background-color: #1d1e20;
+    padding-top: 1rem;
+    margin-top: 10vh;
+}
+.section1 .footerSections h3 {
+    font-weight: 600;
+    color: #fff;
+
+            strong {
+                color: inherit;
+            }
+        }
+
+        text-align: justify;
+        padding: 5vh 10vw;
+
+        p,
+        strong {
+            color: #aaa;
+        }
+    }
+
+    .section2 {
+        @extend %footerSections;
+
+        h4 {
+            font-weight: 600;
+            color: #fff;
+        }
+
+        &__redes {
+            display: flex;
+            padding: 0;
+            margin-top: 1rem;
+
+            li {
+                list-style: none;
+                margin-right: 1rem;
+                background-color: #2d2e30;
+                padding: 10px;
+                border-radius: 0.25rem;
+
+                i {
+                    color: #aaa;
+                    transition: .3s;
+
+                    &:hover {
+                        color: #fff;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: small;
+            color: #aaa;
+        }
+    }
+
+    .section3 {
+        padding: 1rem 2rem 1rem 2rem;
+        width: 100%;
+        border-top: 1px solid #2a2b2d;
+
+        &__span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 13px;
+            margin: auto;
+
+            p {
+                margin: 0;
+                color: #aaa;
+            }
+        }
+
+        &__copyright {
+            text-align: center;
+        }
+    }
+} */
