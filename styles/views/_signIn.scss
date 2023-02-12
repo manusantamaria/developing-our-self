@@ -1,0 +1,67 @@
+.header-Sign {
+    height: 8vh;
+}
+
+.main-Sign {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 92vh;
+    &__info {
+        display: flex;
+        background-image: url("/images/main-sign__info--img2.jpg");
+        height: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        .main-Sign__text {
+            margin: auto;
+            width: 75%;
+            height: 60%;
+            background-color: #fce7e766;
+            .main-Sign__square {
+                margin: 10% 20% 20% 20%;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        .main-Sign__form {
+            margin: auto;
+            width: 75%;
+            height: 70%;
+            /* background-color: ; */
+            display: flex;
+            flex-direction: column;
+            padding: 4vh 4vw;
+            &--description {
+                margin: 2vh 0;
+                font-size: 0.85em;
+            }
+            .main-Sign__label {margin: 1vh 0.5vw;}
+            .main-Sign__input {
+                border: 1px solid #ffd2d2;
+                /* #87CEEB; */
+                border-radius: 3px;
+                margin: 1vh 0;
+                padding: 1vh 0;
+            }
+            .main-Sign__help {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.75em;
+                margin: 1vh 0.2vw;
+            }
+            .main-Sign__other-option,.main-Sign__create-account {margin: auto;}
+            .main-Sign__social-media {
+                display: flex;
+                justify-content: space-around;
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                    i {
+                        width: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

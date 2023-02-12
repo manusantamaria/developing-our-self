@@ -1,0 +1,21 @@
+.grid-container-home {
+    display: grid;
+    grid-template-rows: 8vh 100vh 30vh;
+    .header-Home {
+        display: grid;
+        grid-template-columns: 20vw 50vw 30vw;
+        background-color: #ffd2d2;
+    }
+    .container-Home {
+        display: grid;
+        grid-template-columns: 10vw 90vw;
+        background-color: rosybrown;
+        .aside-Home {
+            background-color: palegoldenrod;
+        }
+    }
+    
+}
+
+
+
