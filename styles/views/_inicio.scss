@@ -1,57 +1,53 @@
-.gridContainer {
+.grid-container-inicio {
     display: grid;
     grid-template-rows: 8vh 92vh;
     background-image: url("/images/inicio--img.jpg");
     height: 100vh;
     background-size: cover;
-    background-position: 50% 30%;
-    /* grid-template-columns: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
-    grid-template-rows: 1.4fr 0.8fr 0.8fr; */
-    .header {
+    background-position: 100%;
+    .header-inicio {
         display: flex;
         justify-content: end;
-        ul {
+        &__ul {
             display: flex;
-            width: 15vw;
+            width: 35vw;
             height: 8vh;
             justify-content: space-evenly;
             align-items: center;
-        }
-        li {
-            display: inline-block;
-            &:hover {
-                color: rgba(0, 0, 0, 0.302);
-                scale: 1.1;
+            li {
+                display: inline-block;
+                &:hover {
+                    color: rgba(0, 0, 0, 0.302);
+                    scale: 1.1;
+                }
             }
         }
     }
-    .main {
+    .main-inicio {
         display: grid;
         grid-template-rows: 50% 30% 20%;
-        z-index: 1;
-        .containerTitle {
+        &__title {
             text-align: center;
             margin: auto;
             .h1 {
                 margin-top: 10vh;
-                font-size: 50px;
+                font-size: 2.4rem;
                 font-weight: 800;
             }
         }
-        .containerOptions {
+        &__options {
             display: grid;
             grid-template-columns: 1fr 7.5fr 1fr;
-            .containerBoxes {
+            .main-inicio__boxes {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 text-align: center;
-                .containerBox {
+                .main-inicio__box {
                     margin: auto;
-                    font-size: 3.5vh;
-                    font-weight: 500;
+                    font-weight: 600;
                     border: #ffd2d270 1.5px solid;
                     border-radius: 8px;
-                    width: 24vw;
+                    width: 34vw;
                     height: 10vh;
                     background-color: #ffd2d230;
                     display: grid;
@@ -59,17 +55,18 @@
                         background-color: #ffd2d241;
                         scale: 1.01;
                     }
+                    &--health{
+                        display: none;
+                    }
                     p {
                         align-self: center;
-                        /* color: rgb(255, 255, 255); */
-                        /* text-shadow: 1px 1px 2px rgb(186, 186, 186), 0 0 1em rgb(31, 158, 78), 0 0 0.2em rgb(255, 13, 0); */
                         text-shadow: 1px 1px 1px #ffd2d2, -1px -1px 2px #ffd2d2
                     }
                 }
             }
-            .arrow {
+            .main-inicio__arrow {
                 margin: auto;
-                button {
+                &--btn {
                     height: 5vh;
                     width: 4vw;
                     border: none;
@@ -80,22 +77,22 @@
                         scale: 1.05;
                     }
                 }
-                .button1 {
+                .main-inicio__arrow--btn1 {
                     background-image: url("/images/back_arrow_5821.png");
                 }
                 
-                .button2 {
+                .main-inicio__arrow--btn2 {
                     background-image: url("/images/forwardarrow_haciaadelante_4836.png");
                 }
             }
         }
-        .containerStart {
+        &__start {
             text-align: center;
-            font-size: 7vh;
             font-weight: 600;
             p {
                 display: inline-block;
                 text-shadow: 1px 1px 1px #ffd2d2;
+                font-size: 2.2rem;
                 &:hover {
                     color: #00008bce;
                     scale: 1.1;

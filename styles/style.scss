@@ -2,7 +2,79 @@
 @import './base/reset';
 @import './views/signIn';
 @import './views/home';
-@import './views/inicio'
+@import './views/inicio';
 
+@media only screen and (min-width: 768px) {
+    .grid-container-inicio{
+        background-image: url("/images/inicio.jpg");
+        background-size:cover;
+        background-position: 100% 45%;
+        .header-inicio{
+            &__ul{
+                width: 25vw;
+            }
+        }
+        .main-inicio{
+            &__title{
+                .h1{
+                    font-size: 3rem;
+                }
+            }
+            &__options{
+                .main-inicio__boxes{
+                    grid-template-columns: repeat(3, 1fr);
+                    .main-inicio__box{
+                        width: 24vw;
+                        height: 13vh;
+                        font-size: 1.5rem;
+                        &--health{
+                            display: grid;
+                        }
+                        p{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }             
+            }
+        }
+    }
+}
 
-
+@media only screen and (min-width: 1024px) {
+    .grid-container-inicio{
+        grid-template-rows: 10vh 90vh;
+        .header-inicio{
+            &__ul{
+                a{
+                    font-size: 1.3rem;
+                }
+                width: 17vw;
+                height: 10vh;
+            }
+        }
+        .main-inicio{
+            &__title{
+                .h1{
+                    font-size: 3.5rem;
+                }
+            }
+            &__options{
+                .main-inicio__boxes{
+                    .main-inicio__box{
+                        &--health{
+                            display: grid;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }             
+            }
+            &__start {
+                p{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
