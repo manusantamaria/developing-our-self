@@ -5,6 +5,7 @@
 @import './views/inicio';
 
 @media only screen and (min-width: 768px) {
+    // INICIO
     .grid-container-inicio{
         background-image: url("/images/inicio.jpg");
         background-size:cover;
@@ -38,9 +39,31 @@
             }
         }
     }
+    // SIGN IN
+    .grid-container-sign{
+        background-color: #ffffff;
+        background-image: none;
+        .header-Sign{
+            background-color: #fce7e766;
+            border-bottom: none;
+        }
+        .main-Sign {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            height: 92vh;
+            &__info {
+                display: flex;
+            }
+            &__container{
+                background: none;
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    // INICIO
     .grid-container-inicio{
         grid-template-rows: 10vh 90vh;
         .header-inicio{
@@ -75,6 +98,23 @@
                     font-size: 3rem;
                 }
             }
+        }
+    }
+    // SIGN IN
+    .grid-container-sign{
+        .main-Sign__info {
+            .main-Sign__text{
+                width: 65%;
+                .main-Sign__square{
+                    h1{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            
         }
     }
 }
