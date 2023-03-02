@@ -1,8 +1,8 @@
-@import './utilities/variables';
 @import './base/reset';
 @import './views/signIn';
 @import './views/home';
 @import './views/inicio';
+@import './utilities/variables';
 
 @media only screen and (min-width: 768px) {
     // INICIO
