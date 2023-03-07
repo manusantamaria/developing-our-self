@@ -37,16 +37,18 @@
                     <h2 class="main-Sign__form--h2">Hey, hello &#128075</h2><!--how to add an emoji-->
                     <p class="main-Sign__form--description">Enter the information you entered while registering</p>
                     <label for="" class="main-Sign__label main-Sign__label--email">Email</label>
-                    <input class="main-Sign__input main-Sign__input--email" type="email" placeholder="">
+                    <input class="main-Sign__input main-Sign__input--email" type="email" placeholder="" required>
                     <label for="" class="main-Sign__label  main-Sign__label--password">Password</label>
-                    <input class="main-Sign__input main-Sign__input--password" type="password" placeholer="Type your password">
+                    <input class="main-Sign__input main-Sign__input--password" type="password" placeholer="Type your password" required>
                     <div class="main-Sign__help">
                         <p>Remember me</p>
                         <a class="main-Sign__forgot" href="#">
                             <p>Forgot password?</p>
                         </a>
                     </div>
-                    <input class="main-Sign__input main-Sign--btn" type="button" value="LOGIN">
+                    <a href="./home.html"> 
+                        <input class="main-Sign__input main-Sign--btn" type="submit" value="LOGIN">
+                    </a>
                     <div class="main-Sign__divisor">
                         <div class="main-Sign__divisor-side main-Sign__divisor-side--left"><hr></div>
                             <p class="main-Sign__other-option">or Sign in using</p>
@@ -61,7 +63,7 @@
                         <li><a class="main-Sign__social-media--twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a class="main-Sign__social-media--google" href="#"><i class="fa-brands fa-google"></i></a></li>
                     </ul>
-                    <a class="main-Sign__create-account" href="#">Create account</a>
+                    <a class="main-Sign__create-account" href="./signUp.html">Create account</a>
                     </form>
             </div>
         </main>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+    <div class="grid-container-home">
+        <header class="header-home">
+            <div class="header-home__start">
+                <div class="header-home__start--menu">
+                    <a href=""><i class="fa-solid fa-bars fa-2x"></i></a>
+                </div>
+                <div class="header-home__start--brand">
+                    <a href="../index.html">DEVELOPING OUR SELF</a>
+                </div>
+            </div>
+            <div class="header-home__center">
+                <div class="header-home__search">
+                    <div class="header-home__search--input search-div">
+                        <input class="search__input" type="text" placeholder="Search a book" name="" id="">
+                    </div>
+                    <div class="header-home__search--btn search-div">
+                        <a href=""><lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#00008b">
+                        </lord-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-home__end">
+                <div class="header-home__end--notification end__btn">
+                    <a href=""><lord-icon
+                        src="https://cdn.lordicon.com/psnhyobz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                    </lord-icon></a>
+                </div>
+                <div class="header-home__end--tool end__btn">
+                    <a href=""><lord-icon
+                        src="https://cdn.lordicon.com/svbmmyue.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px;">
+                    </lord-icon></a>
+                </div>
+                <div class="header-home__end--user end__btn">
+                    <!-- <a href=""><i class="fa-regular fa-user fa-lg"></i></a> -->
+                    <a href="">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/bhfjfgqz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                        </lord-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="container-home">
+            <main class="main-tools">
+                <div class="container">
+                    <form action="" class="formulario">
+                        <div class="paso">
+                            <h3>Paso 1: Inversión inicial</h3>
+                        </div>
+                        <div class="pasoInput">
+                            <label for="" class="title">Inversión inicial</label>
+                            <input class="input" placeholder="" type="number" name="" id="inversionInicial">
+                            <p>Monto de dinero que tiene disponible para invertir inicialmente.</p>
+                        </div>
+                        <div class="paso">
+                            <h3>Paso 2: Contribución</h3>
+                        </div>
+                        <div class="pasoInput">
+                            <label for="" class="title">Contribución mensual</label>
+                            <input class="input" placeholder="" type="number" name="" id="contribucionMensual">
+                            <p>Monto que tiene previsto agregar al capital cada mes, o un número negativo para el monto que tiene previsto extraer cada mes.</p>
+                        </div>
+                        <div class="pasoInput divisor">
+                            <label for="" class="title">Cantidad de tiempo en años</label>
+                            <input class="input" placeholder="" type="number" name="" id="cantAnos">
+                            <p>Cantidad de tiempo, en años, que tiene previsto ahorrar.</p>
+                        </div>
+                        <div class="paso">
+                            <h3>Paso 3: Tasa de interés</h3>
+                        </div>
+                        <div class="pasoInput">
+                            <label for="" class="title">Tasa de interés estimada</label>
+                            <input class="input" placeholder="" type="number" name="" id="tasaInteres">
+                            <p>Su tasa de interés anual estimada.</p>
+                        </div>
+                        <div class="pasoInput divisor">
+                            <label for="" class="title">Rango de varianza de las tasas de interés</label>
+                            <input class="input" placeholder="" type="number" name="" id="varianza">
+                            <p>Rango de tasas de interés (por encima y por debajo de la tasa establecida anteriormente) para las cuales desea ver los resultados.</p>
+                        </div>
+                        <div class="paso">
+                            <h3>Paso 4: Capitalización</h3>
+                        </div>
+                        <div class="pasoInput">
+                            <label for="" class="title">Frecuencia de capitalización</label>
+                            <select class="input" name="" id="capitalizacion">
+                                <option value="0">Anualmente</option>
+                                <option value="1">Semestralmente</option>
+                                <option value="2">Trimestral</option>
+                                <option value="3">Mensualmente</option>
+                            </select>
+                            <p>Cantidad de veces por año que se capitalizará el interés.</p>
+                        </div>
+                        <div class="pasoInput buttons divisor">
+                            <input class="button calcular" type="button" value="Calcular">
+                            <input class="button reset" type="button" value="Restablecer">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    <script src="../js/cEffect.js"></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</body>
+</html>

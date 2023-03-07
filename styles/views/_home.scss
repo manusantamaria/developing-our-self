@@ -3,21 +3,28 @@
 .grid-container-home {
     display: grid;
     grid-template-rows: 9.5vh 100vh 30vh;
+    background-color: #e9f0ec;
+    // background: linear-gradient(240deg, #e9f0ec 80%, #d3794c);           
 // HEADER 
     .header-home {
         display: grid;
         grid-template-columns: 35% 45% 20%;
         position:sticky;
         top: 0;
-        background-color: #fffffffa;
         // INICIO HEADER
         &__start {
             display: flex;
             align-items: center;
             justify-content: space-around;
+            &--menu{
+                i{
+                    color: #00008b;
+                }
+            }
             &--brand {
                 a{
                     font-size: 1.5rem;
+                    color: #00008b;
                 }
             }
         }
@@ -28,7 +35,7 @@
             justify-content: center;
             .header-home__search {
                 background-color: transparent;
-                border: 1px solid #ffd2d2;
+                border: 1px solid #f6d794;
                 border-radius: 14px;
                 width: 40vw;
                 height: 5vh;
@@ -101,7 +108,7 @@
                     justify-content: center;
                     border-radius: 4px;
                     &:hover{
-                        background-color: #ffd2d28f;
+                        background-color: #f6d794;
                         cursor: pointer;
                     }
                     a{
@@ -112,6 +119,7 @@
                         }
                     }
                     p{
+                        color: #00008b;
                         font-size: 0.75rem;
                         text-align: center;
                     }
@@ -129,17 +137,19 @@
             align-items: center;
             position: fixed;
             margin-left: 8vw;
-            background-color: #fffffffa;
             &__btn{
                 padding: 0.5rem 1rem;
                 margin: 1vh 1vw;
                 border: none;
-                background-color: #ffd2d28f;
+                background-color: #f6d794;
                 border-radius: 6px;
+                &--text{
+                    color: #00008b;
+                }
                 &:hover{
-                    background-color: #ffb1b1b3;
+                    background-color: #ffdb8c;
                     cursor: pointer;
-                    border-bottom: solid 1px #d99a9ab3;
+                    border-bottom: solid 1px #ffdb8c;
                 }
             .selected{
                 background-color: #4070F4;
@@ -175,9 +185,6 @@
                     @include title;
                 }
                 &-container {
-                    // @include container;
-                    // grid-template-columns: repeat(3, 1fr);
-                    // grid-template-rows: repeat(2, 20.5vh);
                     display: flex;
                     height: 20.5vh;
                     justify-content:flex-start;
@@ -187,19 +194,14 @@
                         background-color: gainsboro;
                         grid-template-rows: 65% 35% ;
                         min-width: 17vw;
-                        // &--img {
-                        //     height: 20.5vh;
                             img {
                                 max-width: 100%;
                                 max-height: 100%;
                             }
                         }
                         .main-home__recommended-info {
-                            // margin: 0.4vh 0 0.1vh 1vw;
                             background-color: rebeccapurple;
                             &--body {
-                                // display: flex;
-                                // align-items:stretch;
                                 line-height: 1.5;
                             }
                         }
@@ -211,15 +213,9 @@
                     @include title;
                 }
                 &-container {
-                    // @include container;
-                    // grid-template-columns: repeat(2, 1fr);
-                    // grid-template-rows: repeat(2, 17.5vh);
                     .main-home__current-box {
                         display: grid;
                         grid-template-columns: 35% 65%;
-                        // &--img{
-                        // background-color: honeydew;
-                        // }
                     }
                     .main-home__current-info {
                         margin: 0.4vh 0 0.1vh 1vw;

@@ -1,18 +1,25 @@
 .grid-container-inicio {
     display: grid;
     grid-template-rows: 10vh 90vh;
-    background: linear-gradient(230deg, #fc9e4e, #1d0e140d 30.71%),            
-                linear-gradient(165deg, #1d0e14, #1d0e143f 25%, rgba(0,255,0,0) 40.71%),
-                linear-gradient(50deg, #3a4b51 20%, rgba(0,255,0,0) 60.71%),            
-                linear-gradient(336deg, #faf3e8 5%,#fb8042 40.71%, #fbc157);            
+    background-image: url("/images/inicioBackground.png");
+    background-size:cover;
+    background-position: 50% 80%;
+    // background: linear-gradient(230deg, #fc9e4e, #1d0e140d 30.71%),            
+    //             linear-gradient(165deg, #1d0e14, #1d0e143f 25%, rgba(0,255,0,0) 40.71%),
+    //             linear-gradient(50deg, #3a4b51 20%, rgba(0,255,0,0) 60.71%),            
+    //             linear-gradient(336deg, #faf3e8 5%,#fb8042 40.71%, #fbc157);            
                     
     .header-inicio {
         // display: flex;
+        nav{
+            height: 100%;
+        }
         &__container{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0 4vw;
+            height: 100%;
             &--logo{
                 p{
                     font-size: 1.2rem;
@@ -48,19 +55,21 @@
     .main-inicio-first {
         display: grid;
         height: 100%;
-        grid-template-rows: 35% 10% 55%;
+        grid-template-rows: 73% 12% ;
         margin: 0 5vw;
         &__title {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
             &--h1 {
                 margin-top: 3vh;
                 font-size: 2.5rem;
                 font-weight: 800;
+                text-align: center;
             }
             &--description{
                 margin-top: 2vh;
+                display: none;
             }
         }
         &__action{

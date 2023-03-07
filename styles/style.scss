@@ -1,16 +1,18 @@
 @import './base/reset';
 @import './views/signIn';
 @import './views/home';
+@import './views/signUp';
+@import './views/tools';
 @import './views/inicio';
+@import './views/cEffect';
 @import './utilities/variables';
 
 @media only screen and (min-width: 550px) {
     // INICIO
     .grid-container-inicio{
-        background-image: url("/images/editedBG.png");
-        background-size:cover;
+        background-image: url("/images/editedBG1.png");
         background-position: 70% 80%;
-        grid-template-rows: 10vh 100vh;
+        grid-template-rows: 12vh 98vh;
         .main-inicio-first{
             height: 90vh;
             grid-template-rows: 55% 20%;
@@ -20,15 +22,20 @@
                 flex-direction: column;
                 justify-content: end;
                 &--h1{
-                    font-size: 2.5rem;
+                    font-size: 2.8rem;
                     width: 25vw;
+                    text-align: start   ;
                 }
                 &--description{
+                    display: block ;
                     width: 35vw;
                 }
             }
             &__action{
                 justify-content: start;
+                p{
+                    font-size: 1.3rem;
+                }
             }
             &__image{
                 display: none;
@@ -104,15 +111,21 @@
 
     // SIGN IN
     .grid-container-sign{
-        background-color: #ffffff;
+        background-color: #fff5f5;
         background-image: none;
+        background: linear-gradient(240deg, #e9f0ec, #d3794c);           
         .header-Sign{
-            background-color: #fce7e766;
+            // background-color: #fce7e766;
             border-bottom: none;
+            &__logo{
+                p{
+                    color: #00008b;
+                }
+            }
         }
         .main-Sign {
             display: grid;
-            grid-template-columns: 55% 45%;
+            grid-template-columns: 50% 50%;
             height: 92vh;
             &__info {
                 display: flex;
@@ -128,8 +141,8 @@
 @media only screen and (min-width: 1024px) {
     // INICIO
     .grid-container-inicio{
-        background-position: 10% 100%;
-        grid-template-rows: 10vh 100vh;
+        background-position: 10% 92%;
+        grid-template-rows: 12vh 109vh;
         .header-inicio{
             &__ul{
                 a{
@@ -142,7 +155,7 @@
         .main-inicio-first{
             &__title{
                 &--h1{
-                    font-size: 3.8rem;
+                    font-size: 3.2rem;
                 }
                 &--description{
                     font-size: 1.3rem;
@@ -190,5 +203,8 @@
 }
 @media only screen and (min-width: 1440px) {
     // INICIO
-
+    .grid-container-inicio{
+        background-position: 10% 100%;
+        grid-template-rows: 12vh 109vh;
+    }
 }

@@ -1,0 +1,15 @@
+.grid-container-sign{
+    .main-Sign{
+        &__container{
+            .main-Sign__form{
+                .main-Sign__input{
+                    option{
+                        color: #00008b;
+                        background-color: #f6d79482;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
