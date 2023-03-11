@@ -32,24 +32,34 @@ function interesCompuesto(inversionInicial, contribucionMensual, cantAnos, tasaI
                 break;  
         }        
     }  
-    console.log(`Resultados: En ${cantAnos} años usted tendrá: $${inversion.toPrecision(9)}.\nHabiendo invertido: $${(inversionInicial+((contribucionMensual*12)*cantAnos)).toPrecision(9)}\nVarianza superior (${tasaInteres+varianza}%): $${inversionSup.toPrecision(9)}\nValor futuro (${tasaInteres}%): $${inversion.toPrecision(9)}\nVarianza inferior (${tasaInteres-varianza}%): $${inversionInf.toPrecision(9)}`)
+    // console.log(`Resultados: En ${cantAnos} años usted tendrá: $${inversion.toPrecision(9)}.\nHabiendo invertido: $${(inversionInicial+((contribucionMensual*12)*cantAnos)).toPrecision(9)}\nVarianza superior (${tasaInteres+varianza}%): $${inversionSup.toPrecision(9)}\nValor futuro (${tasaInteres}%): $${inversion.toPrecision(9)}\nVarianza inferior (${tasaInteres-varianza}%): $${inversionInf.toPrecision(9)}`)
 }
 
-let inversionInicial = parseInt(prompt("Ingrese su Inversión Inicial: "));
-let contribucionMensual = parseInt(prompt("Ingrese su Contribución Mensual: "));
-let cantAnos = parseInt(prompt("Ingrese la cantidad de tiempo en años: "));
-let tasaInteres = parseInt(prompt("Ingrese la tasa de interés estimada: "));
-let varianza = parseInt(prompt("Ingrese el rango de varianza de la tasa de interés: "));
-let capitalizacion = parseInt(prompt("Elija la Frecuencia de capitalización entre: \n1) Anualmente \n2) Semestralmente \n3) Trimestralmente \n4) Mensualmente"));
 
-interesCompuesto(inversionInicial, contribucionMensual, cantAnos, tasaInteres, varianza, capitalizacion)
-
-const inverInicial = document.querySelector("#inversionInicial").placeholder=`$${inversionInicial}`
-
-const contMensual = document.querySelector("#contribucionMensual").placeholder=`$${contribucionMensual}`
-const anos = document.querySelector("#cantAnos").placeholder=`$${cantAnos}`
-const interes = document.querySelector("#tasaInteres").placeholder=`$${tasaInteres}`
-const vari = document.querySelector("#varianza").placeholder=`$${varianza}`
-const capi = document.querySelector("#capitalizacion").querySelectorAll("option")[capitalizacion-1].selected= 'selected'
+// let inversionInicial = parseInt(prompt("Ingrese su Inversión Inicial: "));
+// let contribucionMensual = parseInt(prompt("Ingrese su Contribución Mensual: "));
+// let cantAnos = parseInt(prompt("Ingrese la cantidad de tiempo en años: "));
+// let tasaInteres = parseInt(prompt("Ingrese la tasa de interés estimada: "));
+// let varianza = parseInt(prompt("Ingrese el rango de varianza de la tasa de interés: "));
+// let capitalizacion = parseInt(prompt("Elija la Frecuencia de capitalización entre: \n1) Anualmente \n2) Semestralmente \n3) Trimestralmente \n4) Mensualmente"));
 
 
+// const inverInicial = document.querySelector("#inversionInicial").placeholder=`$${inversionInicial}`
+// const contMensual = document.querySelector("#contribucionMensual").placeholder=`$${contribucionMensual}`
+// const anos = document.querySelector("#cantAnos").placeholder=`$${cantAnos}`
+// const interes = document.querySelector("#tasaInteres").placeholder=`$${tasaInteres}`
+// const vari = document.querySelector("#varianza").placeholder=`$${varianza}`
+// const capi = document.querySelector("#capitalizacion").querySelectorAll("option")[capitalizacion-1].selected= 'selected'
+
+
+const calcBtn = document.querySelector(".calcular")
+calcBtn.addEventListener("submit", function (e) {   
+    e.preventDefault()
+    const inverInicial = document.querySelector("#inversionInicial").value
+    const contMensual = document.querySelector("#contribucionMensual").value
+    const anos = document.querySelector("#cantAnos").value
+    const interes = document.querySelector("#tasaInteres").value
+    const vari = document.querySelector("#varianza").value
+    const capi = document.querySelector("#capitalizacion").querySelectorAll("option")[capi-1].value
+    interesCompuesto(inverInicial, contMensual, anos, interes, vari, capi)
+})
