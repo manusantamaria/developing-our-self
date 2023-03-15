@@ -169,6 +169,9 @@
   margin: 2vh 0;
   font-size: 0.85em;
 }
+.grid-container-sign .main-Sign__container .main-Sign__form--sms {
+  color: red;
+}
 .grid-container-sign .main-Sign__container .main-Sign__form .main-Sign__label {
   margin: 1vh 0vw;
   color: #00008b;
@@ -188,7 +191,7 @@
 .grid-container-sign .main-Sign__container .main-Sign__form .main-Sign__input:hover {
   background-color: rgba(246, 215, 148, 0.3411764706);
 }
-.grid-container-sign .main-Sign__container .main-Sign__form .main-Sign--btn {
+.grid-container-sign .main-Sign__container .main-Sign__form .main-SignIn--btn, .grid-container-sign .main-Sign__container .main-Sign__form .main-SignUp--btn {
   width: 100%;
 }
 .grid-container-sign .main-Sign__container .main-Sign__form .main-Sign__password--container {
@@ -627,58 +630,59 @@
 }
 .main-cEffect .container-cEffect {
   background-color: #00325b;
-  margin: 5vh 0;
+  margin: 5vh 0 0 0;
 }
-.main-cEffect .formulario-cEffect__pasos {
+.main-cEffect .container-cEffect .formulario-cEffect__pasos {
   padding: 2vh 2vw;
   background-color: #218383;
   color: white;
 }
-.main-cEffect .formulario-cEffect__pasoInput {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput {
   padding: 3.5vh 2.5vw;
   display: flex;
   flex-wrap: wrap;
   color: white;
 }
-.main-cEffect .formulario-cEffect__pasoInput--title {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--title {
   flex-basis: 80%;
   font-weight: 1000;
   padding-bottom: 2vh;
 }
-.main-cEffect .formulario-cEffect__pasoInput--input {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input {
   border: none;
   flex-basis: 20%;
   max-width: 20%;
   padding: 5px;
+  color: #00325b;
 }
-.main-cEffect .formulario-cEffect__pasoInput--input:focus-visible {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input:focus-visible {
   outline: none;
 }
-.main-cEffect .formulario-cEffect__pasoInput--input::-webkit-outer-spin-button, .main-cEffect .formulario-cEffect__pasoInput--input::-webkit-inner-spin-button {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input::-webkit-outer-spin-button, .main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.main-cEffect .formulario-cEffect__pasoInput--input::-moz-placeholder {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input::-moz-placeholder {
   text-align: center;
   color: black;
 }
-.main-cEffect .formulario-cEffect__pasoInput--input::placeholder {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput--input::placeholder {
   text-align: center;
   color: black;
 }
-.main-cEffect .formulario-cEffect__pasoInput p {
+.main-cEffect .container-cEffect .formulario-cEffect__pasoInput p {
   font-size: 0.75em;
   flex-basis: 80%;
   max-width: 70%;
 }
-.main-cEffect .formulario-cEffect__divisor {
+.main-cEffect .container-cEffect .formulario-cEffect__divisor {
   border-top: white solid 1px;
 }
-.main-cEffect .formulario-cEffect__buttons {
+.main-cEffect .container-cEffect .formulario-cEffect__buttons {
   display: flex;
   justify-content: flex-end;
 }
-.main-cEffect .formulario-cEffect__buttons--button {
+.main-cEffect .container-cEffect .formulario-cEffect__buttons--button {
   border: none;
   flex-basis: 10%;
   margin: 1.5vh 0 2vh 2vw;
@@ -687,11 +691,32 @@
   font-weight: 900;
   color: white;
 }
-.main-cEffect .formulario-cEffect__buttons--calcular {
+.main-cEffect .container-cEffect .formulario-cEffect__buttons--calcular {
   background-color: green;
 }
-.main-cEffect .formulario-cEffect__buttons--reset {
+.main-cEffect .container-cEffect .formulario-cEffect__buttons--reset {
   background-color: red;
+}
+.main-cEffect .container-results {
+  background-color: #218383;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-cEffect .container-results__h2, .main-cEffect .container-results__h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5vh 0;
+}
+.main-cEffect .container-results__h3--years, .main-cEffect .container-results__h3--amount {
+  font-size: 1.5rem;
+}
+.main-cEffect .container-results__hr {
+  margin: 0 7vw;
+  background-color: #00325b;
+}
+.main-cEffect .container-results__description {
+  padding: 2vh 2vw;
 }
 
 /* COLORES (AZUL PROFUNDO, ROSA PASTEL, BLANCO)

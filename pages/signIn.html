@@ -36,10 +36,11 @@
                 <form class="main-Sign__form">
                     <h2 class="main-Sign__form--h2">Hey, hello &#128075</h2><!--how to add an emoji-->
                     <p class="main-Sign__form--description">Enter the information you entered while registering</p>
-                    <label for="" class="main-Sign__label main-Sign__label--email">Email</label>
-                    <input class="main-Sign__input main-Sign__input--email" type="email" placeholder="" required>
-                    <label for="" class="main-Sign__label  main-Sign__label--password">Password</label>
-                    <input class="main-Sign__input main-Sign__input--password" type="password" placeholer="Type your password" required>
+                    <p class="main-Sign__form--sms"></p>
+                    <label for="name" class="main-Sign__label main-Sign__label--email">Email</label>
+                    <input id="name" class="main-Sign__input main-Sign__input--email" type="email" placeholder="" required>
+                    <label for="password" class="main-Sign__label  main-Sign__label--password">Password</label>
+                    <input id="password" class="main-Sign__input main-Sign__input--password" type="password" placeholer="Type your password" required>
                     <div class="main-Sign__help">
                         <p>Remember me</p>
                         <a class="main-Sign__forgot" href="#">
@@ -47,7 +48,7 @@
                         </a>
                     </div>
                     <a href="./home.html"> 
-                        <input class="main-Sign__input main-Sign--btn" type="submit" value="LOGIN">
+                        <input class="main-Sign__input main-SignIn--btn" type="submit" value="LOGIN">
                     </a>
                     <div class="main-Sign__divisor">
                         <div class="main-Sign__divisor-side main-Sign__divisor-side--left"><hr></div>
@@ -68,6 +69,7 @@
             </div>
         </main>
     </div>
-    <script src=""></script>
+    <script src="../js/sign.js"></script>
+    <script src="../js/script.js"></script> 
 </body>
 </html>

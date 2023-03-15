@@ -33,31 +33,30 @@
                 </div>
             </div>
             <div class="main-Sign__container">
-                <form action="/login" method="POST" class="main-Sign__form">
+                <form class="main-Sign__form">
                     <h2 class="main-Sign__form--h2">Hey, hello &#128075</h2><!--how to add an emoji-->
                     <p class="main-Sign__form--description">Enter your information and your preferences</p>
-                    <label for="" class="main-Sign__label main-Sign__label--name">Full Name</label>
-                    <input class="main-Sign__input main-Sign__input--name" type="text" placeholder="" required >
-                    <label for="" class="main-Sign__label main-Sign__label--email">Email</label>
-                    <input class="main-Sign__input main-Sign__input--email" type="email" placeholder="" required >
-                    <label for="" class="main-Sign__label  main-Sign__label--password">Password</label>
+                    <label for="name" class="main-Sign__label main-Sign__label--name">Full Name</label>
+                    <input id="name" name="name"class="main-Sign__input main-Sign__input--name" type="text" placeholder="" required >
+                    <label for="email" class="main-Sign__label main-Sign__label--email">Email</label>
+                    <input id="email" name="email"class="main-Sign__input main-Sign__input--email" type="email" placeholder="" required >
+                    <label for="password" class="main-Sign__label  main-Sign__label--password">Password</label>
                     <div class="main-Sign__password--container">
-                        <input class="main-Sign__input main-Sign__input--password" required type="password" placeholer="Type your password">
+                        <input id="password" name="password"class="main-Sign__input main-Sign__input--password" required type="password" placeholer="Type your password">
                         <i class="fa-regular fa-eye" id="show-password"></i>
                     </div>
-                    <label for="" class="main-Sign__label  main-Sign__label--language">Language</label>
-                    <select name="" id="" required class="main-Sign__input main-Sign__input--language">
+                    <label for="language" class="main-Sign__label  main-Sign__label--language">Language</label>
+                    <select name="" id="language" required class="main-Sign__input main-Sign__input--language">
                         <option value="" hidden></option>
                         <option value="English">English</option>
                         <option value="Spanish">Spanish</option>
                     </select>
-                    <a href="./home.html">
-                        <input class="main-Sign__input main-Sign--btn" type="submit" value="NEXT">
-                    </a>
-                    </form>
+                    <button class="main-Sign__input main-SignUp--btn" type="submit">NEXT</button>                    
+                </form>
             </div>
         </main>
     </div>
+    <script src="../js/sign.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

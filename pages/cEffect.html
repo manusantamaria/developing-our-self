@@ -94,10 +94,11 @@
                 <div class="formulario-cEffect__pasoInput">
                     <label for="" class="formulario-cEffect__pasoInput--title">Frecuencia de capitalización</label>
                     <select class="formulario-cEffect__pasoInput--input" name="" id="capitalizacion" required>
-                        <option value="0">Anualmente</option>
-                        <option value="1">Semestralmente</option>
-                        <option value="2">Trimestral</option>
-                        <option value="3">Mensualmente</option>
+                        <option value="0" hidden></option>
+                        <option value="1">Anualmente</option>
+                        <option value="2">Semestralmente</option>
+                        <option value="3">Trimestral</option>
+                        <option value="4">Mensualmente</option>
                     </select>
                     <p>Cantidad de veces por año que se capitalizará el interés.</p>
                 </div>
@@ -106,16 +107,6 @@
                     <input class="formulario-cEffect__buttons--button formulario-cEffect__buttons--reset" type="button" value="Restablecer">
                 </div>
             </form>
-        </div>
-        <div class="container-results" hidden>
-            <h2 class="container-results__h2">Results</h2>
-            <h3 class="container-results__h3">In<span class="container-results__years"></span>years, you'll have $<span class="container-results__amount"></span></h3>
-            <hr>
-            <p class="container-results__description"></p>
-            <p class="container-results__description"></p>
-            <div class="container-results__chart"></div>
-            <button class="container-results__btn"></button>
-            <div class="container-results__table"></div>
         </div>
     </main>
     <script src="../js/cEffect.js"></script>

@@ -9,69 +9,93 @@
         font-size: 1.2rem;
     }
     .container-cEffect{
-    background-color: #00325b;
-    margin: 5vh 0;
-    }
-    .formulario-cEffect{
-        &__pasos{
-            padding: 2vh 2vw;
-            background-color: #218383 ;
-            color: white;
-        }
-        &__pasoInput{
-            padding: 3.5vh 2.5vw;
-            display: flex;
-            flex-wrap: wrap;
-            color: white;
-            &--title{
-                flex-basis: 80%;
-                font-weight: 1000;
-                padding-bottom: 2vh;
-            }
-            &--input{
-                border: none;
-                flex-basis: 20%;
-                max-width: 20%;
-                padding: 5px;
-                &:focus-visible{
-                    outline: none;
-                }
-                &::-webkit-outer-spin-button,&::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
-                &::placeholder{
-                    text-align: center;
-                    color: black;
-                }
-            }
-            p{
-                font-size: 0.75em;
-                flex-basis: 80%;
-                max-width: 70%;
-            }
-        }
-        &__divisor{
-            border-top: white solid 1px;
-        }
-        &__buttons{
-            display: flex;
-            justify-content: flex-end;
-            &--button{
-                border: none;
-                flex-basis: 10%;
-                margin: 1.5vh 0 2vh 2vw;
-                padding: 0.75em;
-                font-size: 1em;
-                font-weight: 900;
+        background-color: #00325b;
+        margin: 5vh 0 0 0;
+        .formulario-cEffect{
+            &__pasos{
+                padding: 2vh 2vw;
+                background-color: #218383 ;
                 color: white;
             }
-            &--calcular{
-                background-color: green;          
+            &__pasoInput{
+                padding: 3.5vh 2.5vw;
+                display: flex;
+                flex-wrap: wrap;
+                color: white;
+                &--title{
+                    flex-basis: 80%;
+                    font-weight: 1000;
+                    padding-bottom: 2vh;
+                }
+                &--input{
+                    border: none;
+                    flex-basis: 20%;
+                    max-width: 20%;
+                    padding: 5px;
+                    color: #00325b;
+                    &:focus-visible{
+                        outline: none;
+                    }
+                    &::-webkit-outer-spin-button,&::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    &::placeholder{
+                        text-align: center;
+                        color: black;
+                    }
+                }
+                p{
+                    font-size: 0.75em;
+                    flex-basis: 80%;
+                    max-width: 70%;
+                }
             }
-            &--reset{
-                background-color: red;
+            &__divisor{
+                border-top: white solid 1px;
             }
+            &__buttons{
+                display: flex;
+                justify-content: flex-end;
+                &--button{
+                    border: none;
+                    flex-basis: 10%;
+                    margin: 1.5vh 0 2vh 2vw;
+                    padding: 0.75em;
+                    font-size: 1em;
+                    font-weight: 900;
+                    color: white;
+                }
+                &--calcular{
+                    background-color: green;          
+                }
+                &--reset{
+                    background-color: red;
+                }
+            }
+        }
+    }
+    .container-results{
+        background-color: #218383;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        &__h2, &__h3{
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1.5vh 0;
+        }
+        &__h3{
+            &--years, &--amount{
+                font-size: 1.5rem;
+            }
+        }
+        &__hr{
+            margin: 0 7vw;
+            background-color:#00325b ;
+        }
+        &__description{
+            padding: 2vh 2vw;
         }
     }
 }
