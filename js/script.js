@@ -16,20 +16,3 @@ asideBtns.forEach(btn => {
     });
 });
 
-
-// VISIBLE PASSWORD
-const showPassword = document.querySelector("#show-password");
-const passwordField = document.querySelector(".main-Sign__input--password")
-showPassword.addEventListener("click", function(){
-    this.classList.toggle("fa-eye")
-    this.classList.toggle("fa-eye-slash");
-    const type = passwordField.getAttribute("type")=== "password" ? "text" : "password";
-    passwordField.setAttribute("type",type)
-})
-
-// GO HOME
-// const login = document.querySelector("main-Sign--btn")
-// login.addEventListener("click", function(e){
-//     e.preventDefault()
-//     window.location.href="./pages/home.html";
-// })
