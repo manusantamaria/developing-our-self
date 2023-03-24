@@ -75,3 +75,81 @@
         color: #00008b;
     }
 }
+
+// .header {
+//     display: grid;
+//     height: 9.5vh;
+//     background-color: #ffffffeb;
+//     grid-template-columns: 35% 45% 20%;
+//     position:sticky;
+//     top: 0;
+//     // INICIO HEADER
+//     &__start {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-around;
+//         &--menu{
+//             i{
+//                 color: #00008b;
+//             }
+//         }
+//         &--brand {
+//             a{
+//                 font-size: 1.5rem;
+//                 color: #00008b;
+//             }
+//         }
+//     }
+//     // CENTRO HEADER
+//     &__center {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         .header__search {
+//             background-color: transparent;
+//             border: 1px solid #f6d794;
+//             border-radius: 14px;
+//             width: 40vw;
+//             height: 5vh;
+//             display: grid;
+//             grid-template-columns: 90% 10%;
+//             &--input {
+//                 width: 100%;
+//                 overflow: hidden;
+//                 ::placeholder {
+//                     color: #00008b;
+//                 }
+//             }
+//             .search__input {
+//                 background-color: transparent;
+//                 border: none;
+//                 height: 100%;
+//                 width: 100%;
+//                 text-align: center;
+//                 letter-spacing: 0.2rem;
+//                 &:focus {
+//                     outline: none;
+//                 }
+//             }
+//             &--btn {
+//                 display: flex;
+//                 margin: auto;
+//                 lord-icon{
+//                     width: 1.6rem;
+//                     height: 1.6rem;
+//                 }
+//             }
+//         }
+//     }
+//     // FINAL HEADER
+//     &__end {
+//         display: flex;
+//         justify-content: space-evenly;
+//         align-items: center;
+//     }
+//     lord-icon{
+//         width:1.95rem;
+//         height:1.95rem;
+//         color: #00008b;
+//     }
+// }
