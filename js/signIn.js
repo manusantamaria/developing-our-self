@@ -1,10 +1,6 @@
 // Sign In Button
 function validarUsuario(user, password) {
-    if(user.password === password){
-        return true
-    } else {
-        return false
-    }
+    user.password === password ? true: false
 }
 const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
 

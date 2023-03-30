@@ -16,46 +16,47 @@
     <header class="header">
         <div class="header__start">
             <div class="header__start--menu">
-                <a href="./home.html"><i class="fa-solid fa-bars fa-2x"></i></a>
+                <a href="./home.html"><i class="fa-solid fa-bars fa-xl"></i></a>
             </div>
             <div class="header__start--brand">
                 <a href="../index.html">DEVELOPING OUR SELF</a>
             </div>
         </div>
-        <div class="header__center">
+        <!-- <div class="header__center"> -->
+            
+        <!-- </div> -->
+        <div class="header__end">
             <!-- <div class="header__search"> -->
                 <!-- <div class="header__search--input search-div">
                     <input class="search__input" type="text" placeholder="Search a book" name="" id="">
                 </div> -->
                 <div class="header__search--btn search-div">
-                    <a href=""><lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#00008b">
+                    <a href=""><lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#00008b" style="width:20px;height:20px;top:2px">
                     </lord-icon></a>
                 </div>
             <!-- </div> -->
-        </div>
-        <div class="header__end">
             <div class="header__end--notification end__btn">
                 <a href=""><lord-icon
-                    src="https://cdn.lordicon.com/psnhyobz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                    src="https://cdn.lordicon.com/psnhyobz.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px">
                 </lord-icon></a>
             </div>
             <div class="header__end--tool end__btn">
                 <a href="./tools.html"><lord-icon
-                    src="https://cdn.lordicon.com/svbmmyue.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px;">
+                    src="https://cdn.lordicon.com/svbmmyue.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px;">
                 </lord-icon></a>
             </div>
             <div class="header__end--user end__btn">
                 <!-- <a href=""><i class="fa-regular fa-user fa-lg"></i></a> -->
                 <a href="">
                     <lord-icon
-                    src="https://cdn.lordicon.com/bhfjfgqz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                    src="https://cdn.lordicon.com/bhfjfgqz.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px">
                     </lord-icon>
                 </a>
             </div>
         </div>
     </header>
     <div class="container-home">
-        <aside class="aside-home">
+        <aside class="aside-home" hidden>
             <ul class="aside-home__ul">
                 <li class="aside-home__li aside-home__li--fitness">
                     <a href="#"><lord-icon
@@ -104,101 +105,184 @@
             </ul>
         </aside>
         <div class="bar-home">
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">All</div>
-            </button>
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">Books</div>
-            </button>
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">Podcasts</div>
-            </button>
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">Courses</div>
-            </button>
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">Channels</div>
-            </button>
-            <button class="bar-home__btn">
-                <div class="bar-home__btn--text">Influencers</div>
-            </button>
-            <!-- <div class="bar-home__arrow">
-                <button class="bar-home__arrow--btn"></button>
-            </div> -->
+            <div class="bar-home__arrow arrow-left">
+                <button class="bar-home__arrow--btn arrow-left__btn"></button>
+            </div>
+            <div class="bar-home__btns">
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">All</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Books</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Channels</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Podcasts</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Courses</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Influencers</div>
+                </button>
+                <button class="bar-home__btns--btn">
+                    <div class="bar-home__btns--btn-text">Companies</div>
+                </button>
+            </div>
+            <div class="bar-home__arrow arrow-right">
+                <button class="bar-home__arrow--btn arrow-right__btn"></button>
+            </div>
         </div>
         <main class="main-home">
             <div class="main-home__recommended">
-                <div class="main-home__recommended--books">
+                <div class="main-home__recommended--section main-home__recommended--books">
                     <p class="main-home__recommended--h1">Books</p>
-                    <div class="main-home__recommended-container">
-                        <div class="main-home__recommended-box">
-                            
+                    <div class="main-home__recommended--container">
+                        <div class="main-home__arrow main-home__arrow1 arrow-left">
+                            <button class="main-home__arrow--btn arrow-left__btn"></button>
                         </div>
-                        <div class="main-home__recommended-box">
-                            
+                        <div class="main-home__recommended-boxes">
+                            <div class="main-home__recommended-boxes--box">
+                                <div class="main-home__recommended--pic">
+                                    <img class="main-home__recommended--pic-img" src="../images/subtleArtCover.png" alt="">
+                                </div>
+                                <div class="main-home__recommended--title">
+                                    <p class="main-home__recommended--title-p">1The Subtle Art of Not Giving a Fuck</p>
+                                </div>
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                <div class="main-home__recommended--pic">
+                                    <img class="main-home__recommended--pic-img" src="../images/subtleArtCover.png" alt="">
+                                </div>
+                                <div class="main-home__recommended--title">
+                                    <p class="main-home__recommended--title-p">2The Subtle Art of Not Giving a Fuck</p>
+                                </div>
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                <div class="main-home__recommended--pic">
+                                    <img class="main-home__recommended--pic-img" src="../images/subtleArtCover.png" alt="">
+                                </div>
+                                <div class="main-home__recommended--title">
+                                    <p class="main-home__recommended--title-p">3The Subtle Art of Not Giving a Fuck</p>
+                                </div>
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                <div class="main-home__recommended--pic">
+                                    <img class="main-home__recommended--pic-img" src="../images/subtleArtCover.png" alt="">
+                                </div>
+                                <div class="main-home__recommended--title">
+                                    <p class="main-home__recommended--title-p">4The Subtle Art of Not Giving a Fuck</p>
+                                </div>
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                <div class="main-home__recommended--pic">
+                                    <img class="main-home__recommended--pic-img" src="../images/subtleArtCover.png" alt="">
+                                </div>
+                                <div class="main-home__recommended--title">
+                                    <p class="main-home__recommended--title-p">5The Subtle Art of Not Giving a Fuck</p>
+                                </div>
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
                         </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
+                        <div class="main-home__arrow main-home__arrow1 arrow-right">
+                            <button class="main-home__arrow--btn arrow-right__btn"></button>
                         </div>
                     </div>
                 </div>
-                <div class="main-home__recommended--youtube">
+                <div class="main-home__recommended--section main-home__recommended--youtube">
                     <p class="main-home__recommended--h1">YouTube Channels</p>
-                    <div class="main-home__recommended-container">
-                        <div class="main-home__recommended-box">
-                            
+                    <div class="main-home__recommended--container">
+                        <div class="main-home__arrow main-home__arrow2 arrow-left">
+                            <button class="main-home__arrow--btn arrow-left__btn"></button>
                         </div>
-                        <div class="main-home__recommended-box">
+                        <div class="main-home__recommended-boxes">
+                            <div class="main-home__recommended-boxes--box">
                             
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
                         </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
+                        <div class="main-home__arrow main-home__arrow2 arrow-right">
+                            <button class="main-home__arrow--btn arrow-right__btn"></button>
                         </div>
                     </div>
                 </div>
-                <div class="main-home__recommended--podcasts">
+                <div class="main-home__recommended--section main-home__recommended--podcasts">
                     <p class="main-home__recommended--h1">Podcasts</p>
-                    <div class="main-home__recommended-container">
-                        <div class="main-home__recommended-box">
-
+                    <div class="main-home__recommended--container">
+                        <div class="main-home__arrow main-home__arrow3 arrow-left">
+                            <button class="main-home__arrow--btn arrow-left__btn"></button>
                         </div>
-                        <div class="main-home__recommended-box">
+                        <div class="main-home__recommended-boxes">
+                            <div class="main-home__recommended-boxes--box">
                             
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                        </div> 
+                        <div class="main-home__arrow main-home__arrow3 arrow-right">
+                            <button class="main-home__arrow--btn arrow-right__btn"></button>
                         </div>
                     </div>
                 </div>
-                <div class="main-home__recommended--courses">
+                <div class="main-home__recommended--section main-home__recommended--courses">
                     <p class="main-home__recommended--h1">Courses</p>
-                    <div class="main-home__recommended-container">
-                        <div class="main-home__recommended-box">
-                            
+                    <div class="main-home__recommended--container">
+                        <div class="main-home__arrow main-home__arrow4 arrow-left">
+                            <button class="main-home__arrow--btn arrow-left__btn"></button>
                         </div>
-                        <div class="main-home__recommended-box">
-                            
+                        <div class="main-home__recommended-boxes">
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
+                            <div class="main-home__recommended-boxes--box">
+                                
+                            </div>
                         </div>
-                        <div class="main-home__recommended-box">
-                            
-                        </div>
-                        <div class="main-home__recommended-box">
-                            
+                        <div class="main-home__arrow main-home__arrow4 arrow-right">
+                            <button class="main-home__arrow--btn arrow-right__btn"></button>
                         </div>
                     </div>
                 </div>
@@ -212,6 +296,7 @@
         <div class="footer__socialMedia"></div>
         <div class="footer__rights"></div>
     </footer>
+    <script src="../js/home.js"></script>
     <script src="../js/script.js"></script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
