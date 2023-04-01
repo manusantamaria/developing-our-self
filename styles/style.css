@@ -247,7 +247,7 @@
 }
 .container-home .main-home {
   margin-top: 10.5vh;
-  z-index: 0;
+  width: 100vw;
 }
 .container-home .main-home__recommended {
   margin-bottom: 2vh;
@@ -256,7 +256,6 @@
 }
 .container-home .main-home__recommended--section {
   margin-top: 1vh;
-  width: auto;
 }
 .container-home .main-home__recommended--section .main-home__recommended--h1 {
   font-size: 1.3rem;
@@ -273,7 +272,6 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3019607843);
   margin: 0 5vw;
   border-radius: 10px;
-  width: 100%;
 }
 .container-home .main-home__recommended--section .main-home__recommended-boxes--box .main-home__recommended--pic {
   width: 90vw;
@@ -362,7 +360,7 @@
 .grid-container-inicio {
   display: grid;
   grid-template-rows: 10vh 90vh;
-  background-image: url("/images/inicioBackground.png");
+  background-image: url("./images/inicioBackground.png");
   background-size: cover;
   background-position: 50% 80%;
 }
@@ -458,7 +456,6 @@
   display: none;
 }
 
-/* HOW TO AFFECT A PARENT HOVERING A CHILD? */
 .main-cEffect {
   margin: 0 10vw;
 }

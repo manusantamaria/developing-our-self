@@ -1,7 +1,7 @@
 .grid-container-inicio {
     display: grid;
     grid-template-rows: 10vh 90vh;
-    background-image: url("/images/inicioBackground.png");
+    background-image: url("./images/inicioBackground.png");
     background-size:cover;
     background-position: 50% 80%;
     // background: linear-gradient(230deg, #fc9e4e, #1d0e140d 30.71%),            
@@ -107,9 +107,3 @@
 .main-inicio-second{
     display: none;
 }
-
-
-/* HOW TO AFFECT A PARENT HOVERING A CHILD? */
-// .containerBox:hover>.gridContainer {
-//     background-image: url("/images/meditate.jpg");
-// }
