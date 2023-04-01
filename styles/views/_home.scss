@@ -3,52 +3,25 @@
 
 .container-home {
         display: grid;
+        overflow: hidden;
 // BAR 
     .bar-home{
         height: 6vh;
         width: 100%;
-        display: grid;
-        grid-template-columns: 7vw 86vw 7vw;
-        align-items: center;
         position: fixed;
+        top: 4.5vh;
         background-color: #ffffffeb;
         z-index: 100;
-        &__arrow{
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 200;
-            &--btn{
-                position: fixed;
-                height: 3vh;
-                width: 4vw;
-                border: none;
-                background-color: transparent;
-                background-size: cover;
-                background-position: center;
-                &:hover {
-                    scale: 1.05;
-                }
-            }
-            .arrow-left__btn{
-                background-image: url("../../images/back_arrow_5821.png");
-            }
-            .arrow-right__btn{
-                background-image: url("../../images/forwardarrow_haciaadelante_4836.png");
-            }            
-        }
         &__btns{
             display: flex;
-            transition: transform 0.5s ease-in-out;
+            overflow-x: scroll;
             &--btn{
                 padding: 0.5rem 1rem;
                 margin: 1vh 1vw;
                 border: none;
                 background-color: #f6d794;
                 border-radius: 6px;
+                white-space: nowrap;
                 &-text{
                     color: #00008b;
                 }
@@ -63,89 +36,69 @@
     }
 // MAIN
     .main-home {
-        width: 100%;
-        margin-top: 4.7vh;
+        margin-top: 10.5vh;
         z-index: 0;
         &__recommended {
             margin-bottom: 2vh;
             display: flex;
             flex-direction: column;
             &--section{
-                height: 30vh;
+                margin-top: 1vh;
+                width: auto;
                 .main-home__recommended--h1 {
                     @include title;
-                }
-                .main-home__recommended--container {
-                    display: grid;
-                    grid-template-columns: 5vw 90vw 5vw;
+                }                    
+                .main-home__recommended-boxes{
                     height: 25vh;
-                    // justify-content:flex-start;
                     margin: 1vh 0;
-                    .main-home__arrow{
-                        // width: 100%;
-                        // height: 100%;
-                        background-color: #fff;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        z-index: 200;
-                        &--btn{
-                            position: fixed;
-                            height: 3vh;
-                            width: 4vw;
-                            border: none;
-                            background-color: transparent;
-                            background-size: cover;
-                            background-position: center;
-                            &:hover {
-                                scale: 1.05;
+                    overflow-x: scroll;
+                    display: flex;
+                    &--box{
+                        display: grid;
+                        box-shadow: 0 2px 4px 0 #0000004d;
+                        margin: 0 5vw;
+                        border-radius: 10px;
+                        width: 100%;
+                        .main-home__recommended--pic{
+                            width: 90vw;
+                            height: 16vh;
+                            display: flex;
+                            justify-content: center;
+                            // border-bottom: #00008b 1px solid;
+                            &-img{
+                                max-height: 100%;   
+                                max-width: 100%;
+                                border-radius: 10px;
+                            }
+                            &-brand{
+                                align-items: center;
+                                background: #fff;
+                                border-radius: 3px;
+                                box-shadow: 1px 1px 2px 0 #aaaaaa80;
+                                display: flex;
+                                height: 66px;
+                                left: 24px;
+                                padding: 7px;
+                                position: absolute;
+                                top: 840px;
+                            }
+                            &-img2{
+                                border-radius: 50%;
+                            }
+                            
+                        }
+                        .main-home__recommended--title{
+                            display: flex;
+                            padding: 1vh;
+                            justify-content: center;
+                            &-p{
+                                color: #00008b;
+                                text-align: center;
+                                align-self: center;
+                                font-size: 1.3rem;
                             }
                         }
                     }
-                    .arrow-left__btn{
-                        background-image: url("../../images/back_arrow_5821.png");
-                    }
-                    .arrow-right__btn{
-                        background-image: url("../../images/forwardarrow_haciaadelante_4836.png");
-                    }    
-                    .main-home__recommended-boxes{
-                        display: flex;
-                        transition: transform 0.5s ease-in-out;
-                        // height: 100%;
-                        &--box{
-                            display: grid;
-                            // height: 100%;
-                            margin: 0 1vw;
-                            // background-color: gainsboro;
-                            // grid-template-rows: 75% 25% ;
-                            border: #00008b 1px solid;
-                            .main-home__recommended--pic{
-                                width: 43vw;
-                                max-height: 16vh;
-                                // overflow: hidden;
-                                display: flex;
-                                justify-content: center;
-                                border-bottom: #00008b 1px solid;
-                                &-img{
-                                    // max-width: 100%;
-                                    max-height: 100%;
-                                    
-                                }
-                            }
-                            .main-home__recommended--title{
-                                // height: 100%;
-                                display: flex;
-                                padding: 1vh;
-                                // z-index: 100;
-                                &-p{
-                                    color: #00008b;
-                                    text-align: center;
-                                    align-self: center;
-                                    font-size: 1.3rem;
-                                }
-                            }
-                        }
-                    } 
                 }   
             }
         }
