@@ -1,0 +1,215 @@
+{
+    "books":{
+        "1":{
+            "name": "Atomic Habits",
+            "by": "James Clear",
+            "genre": "Habits & Productivity",
+            "img": "../images/atomicHabits.jpg"
+        },
+        "2":{
+            "name": "The Power of Now",
+            "by": "Eckhart Tolle",
+            "genre": "Emotional Intelligence",
+            "img": "../images/powerOfNow.jpg"
+        },
+        "3":{
+            "name": "The 7 Habits of Highly Effective People",
+            "by": "Stephen R. Covey",
+            "genre": "Habits & Productivity",
+            "img": "../images/sevenHabits.jpg"
+        },
+        "4":{
+            "name": "Rich Dad Poor Dad",
+            "by": "Robert T. Kiyosaki",
+            "genre": "Money & Finance",
+            "img": "../images/richDad.jpg"
+        },
+        "5":{
+            "name": "The Lean Startup",
+            "by": "Eric Ries",
+            "genre": "Business & Leadership",
+            "img": "../images/leanStartup.jpg"
+        },
+        "6":{
+            "name": "The One Thing",
+            "by": "Gary Keller and Jay Papasan",
+            "genre": "Habits & Productivity",
+            "img": "../images/theOneThing.jpg"
+        },
+        "7":{
+            "name": "How to Win Friends and Influence..",
+            "by": "Dale Carnegie",
+            "genre": "Emotional Intelligence",
+            "img": "../images/howToWinFriends.png"
+        },
+        "8":{
+            "name": "The Millionaire Fastlane",
+            "by": "MJ DeMarco",
+            "genre": "Money & Finance",
+            "img": "../images/millionaireFastlane.jpg"
+        },
+        "9":{
+            "name": "Good to Great",
+            "by": "Jim Collins",
+            "genre": "Business & Leadership",
+            "img": "../images/goodToGreat.jpg"
+        },
+        "10":{
+            "name": "The 4-Hour Work Week",
+            "by": "Timothy Ferriss",
+            "genre": "Habits & Productivity",
+            "img": "../images/fourHourWorkWeek.jpg"
+        }
+    },
+    "yTChannels": {
+        "1":{
+            "name": "Thomas Frank",
+            "by": "Thomas Frank",
+            "genre": "Habits & Productivity",
+            "img":  "../images/thomasFrank.jpg"
+        },
+        "2":{
+            "name": "TED",
+            "by": "TED",
+            "genre": "Skillset Enhancement",
+            "img":  "../images/ted.png"
+        },
+        "3":{
+            "name": "The School of Life",
+            "by": "The School of Life",
+            "genre": "Emotional Intelligence",
+            "img":  "../images/schoolOfLife.jpg"
+        },
+        "4":{
+            "name": "Mindvalley",
+            "by": "Mindvalley",
+            "genre": "Happiness & Success",
+            "img":  "../images/mindvalley.png"
+        },
+        "5":{
+            "name": "FitnessBlender",
+            "by": "Kelli and Daniel Segars",
+            "genre": "Fitness & Health",
+            "img":  "../images/fitnessBlender.jpg"
+            },
+        "6":{
+            "name": "Matt D'Avella",
+            "by": "Matt D'Avella",
+            "genre": "Habits & Productivity",
+            "img":  "../images/mattDAvella.jpg"
+        },
+        "7":{
+            "name": "Nerdwriter1",
+            "by": "Evan Puschak",
+            "genre": "Skillset Enhancement",
+            "img":  "../images/nerdwriter1.jpg"
+        },
+        "8":{
+            "name": "CrashCourse",
+            "by": "Hank Green",
+            "genre": "Skillset Enhancement",
+            "img":  "../images/crashCourse.jpg"
+        },
+        "9":{
+            "name": "Charisma on Command",
+            "by": "Charlie Houpert",
+            "genre": "Emotional Intelligence",
+            "img":  "../images/charismaOnCommand.jpg"
+        },
+        "10":{
+            "name": "FightMediocrity",
+            "by": "Practical Psychology",
+            "genre": "Skillset Enhancement",
+            "img":  "../images/fightMediocrity.jpg"
+        }
+    
+    },
+    "podcasts": {
+        "1": {
+        "name": "The Tim Ferriss Show",
+        "by": "Tim Ferriss",
+        "genre": "Business & Leadership",
+        "img":  "../images/timFerrisShow.jpg"
+        },
+        "2": {
+        "name": "Happier with Gretchen Rubin",
+        "by": "Gretchen Rubin",
+        "genre": "Happiness & Success",
+        "img":  "../images/happier.png"
+        },
+        "3": {
+        "name": "The School of Greatness",
+        "by": "Lewis Howes",
+        "genre": "Fitness & Health",
+        "img":  "../images/schoolOfGreatness.jpg"
+        },
+        "4": {
+        "name": "The Mindvalley Podcast",
+        "by": "Vishen Lakhiani",
+        "genre": "Emotional Intelligence",
+        "img":  "../images/mindvalleyPodcast.jpg"
+        },
+        "5": {
+        "name": "Planet Money",
+        "by": "NPR",
+        "genre": "Money & Finance",
+        "img":  "../images/planetMoney.png"
+        },
+        "6": {
+        "name": "The GaryVee Audio Experience",
+        "by": "Gary Vaynerchuk",
+        "genre": "Business & Leadership",
+        "img":  "../images/garyVee.jpg"
+        },
+        "7": {
+        "name": "Optimal Living Daily",
+        "by": "Justin Malik",
+        "genre": "Habits & Productivity",
+        "img":  "../images/optimalLivingDaily.jpg"
+        },
+        "8": {
+        "name": "The Mindful Minute",
+        "by": "Meryl Arnett",
+        "genre": "Happiness & Success",
+        "img":  "../images/mindfulMinute.jpg"
+        },
+        "9": {
+        "name": "The James Altucher Show",
+        "by": "James Altucher",
+        "genre": "Business & Leadership",
+        "img":  "../images/jamesAltucher.jpg"
+        }
+    },
+    "courses": {
+        "1": {
+        "name": "The Science of Well-Being",
+        "by": "Yale University",
+        "genre": "Happiness & Success",
+        "img":  "../images/scienceOfWellBeing.png"
+        },
+        "2": {
+        "name": "The Productivity Project",
+        "by": "Chris Bailey",
+        "genre": "Habits & Productivity",
+        "img":  "../images/productivityLife.jpg"
+        },
+        "3": {
+        "name": "Financial Markets",
+        "by": "Yale University",
+        "genre": "Money & Finance",
+        "img":  "../images/finantialMarkets.jpeg"
+        },
+        "4": {
+        "name": "Learning How to Learn",
+        "by": "University of California San Diego",
+        "genre": "Skillset Enhancement",
+        "img":  "../images/learningHowToLearn.jpg"
+        },
+        "5": {
+        "name": "Leadership and Emotional Intelligence",
+        "by": "Daniel Goleman",
+        "genre": "Business & Leadership",
+        "img":  "../images/liderazgo.png"
+        }
+    }
+}

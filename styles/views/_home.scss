@@ -2,14 +2,23 @@
 // CUERPO DEL HOME
 
 .container-home {
-        display: grid;
-        overflow: hidden;
+    display: grid;
+    overflow: hidden;
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #3e3e8b;
+    }   
+    ::-webkit-scrollbar-thumb:hover {
+        background: #00008b;
+    }
 // BAR 
     .bar-home{
         height: 6vh;
         width: 100%;
         position: fixed;
-        top: 4.5vh;
+        top: 5vh;
         background-color: #ffffffeb;
         z-index: 100;
         &__btns{
@@ -51,12 +60,14 @@
                 .main-home__recommended-boxes{
                     height: 25vh;
                     margin: 1vh 0;
+                    padding: 0.4vh 0;
                     overflow-x: scroll;
                     display: flex;
                     &--box{
                         display: grid;
                         box-shadow: 0 2px 4px 0 #0000004d;
                         margin: 0 5vw;
+                        padding-top: 1vh;
                         border-radius: 10px;
                         .main-home__recommended--pic{
                             width: 90vw;
@@ -101,102 +112,9 @@
                 }   
             }
         }
-        // &__current {
-        //     &--h2 {
-        //         @include title;
-        //     }
-        //     &-container {
-        //         .main-home__current-box {
-        //             display: grid;
-        //             grid-template-columns: 35% 65%;
-        //         }
-        //         .main-home__current-info {
-        //             margin: 0.4vh 0 0.1vh 1vw;
-        //             &--body {
-        //                 line-height: 1.5;
-        //             }
-        //             &--title {
-        //                 font-size: 1.3rem;
-        //             }
-        //         }
-        //     }
-        // }
-        // &__slide-container{
-        //     min-height: 50vh;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     background-color: #EFEFEF;
-        //     .main-home__slide-content{
-        //         margin: 0 40px;
-        //         .main-home__card-wrapper{
-        //             .main-home__card{
-        //                 border-radius: 25px;
-        //                 background-color: #FFF;
-        //                 .main-home__image-content{
-        //                         padding: 10px 14px;
-        //                         align-items: center;
-        //                         display: flex;
-        //                         flex-direction: column;
-        //                         row-gap: 5px;
-        //                     .main-home__overlay{
-        //                         position: absolute;
-        //                         height: 100%;
-        //                         width: 100%;
-        //                         left: 0;
-        //                         top: 0;
-        //                         background-color: #4070F4;
-        //                         .main-home__card-image{
-        //                             position: relative;
-        //                             height: 23vh;
-        //                             width: 20vw;
-        //                             border-radius: 50%;
-        //                             background-color: #FFF;
-        //                             .main-home__card-img{
-        //                                 height: 100%;
-        //                                 width: 100%;
-        //                                 object-fit: cover;
-        //                                 border-radius: 50%;
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //                 .main-home__card-content{
-        //                     padding: 10px 14px;
-        //                     align-items: center;
-        //                     display: flex;
-        //                     flex-direction: column;
-        //                     &--name{
-        //                         font-size: 18px;
-        //                         font-weight: 500;
-        //                         color: #333;
-        //                     }
-        //                     &--description{
-        //                         font-size: 14px;
-        //                         color: #707070;
-        //                         text-align: center;
-        //                     }
-        //                     &--button{
-        //                         border: none;
-        //                         font-size: 16px;
-        //                         color: #FFF;
-        //                         padding: 8px 16px;
-        //                         background-color: #4070F4;
-        //                         border-radius: 6px;
-        //                         margin: 14px;
-        //                         cursor: pointer;
-        //                         transition: all 0.3s ease;
-        //                         &:hover{
-        //                             background-color: #265DF2;
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
     }
-}  
+}
+
 
 
 

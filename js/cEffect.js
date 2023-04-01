@@ -58,7 +58,7 @@ calcBtn.addEventListener("click", function (e) {
         containerResults.innerHTML =   `<h2 class="container-results__h2">Results</h2>
                                         <h3 class="container-results__h3">In <span class="container-results__h3--years">${anos}</span> years, you'll have $<span class="container-results__h3--amount">${resultado[0].toFixed(2)}</span></h3>
                                         <hr>
-                                        <p class="container-results__description">La siguiente tabla muestra una estimación de cuánto crecerán sus ahorros iniciales en el tiempo, según la tasa de interés y el cronograma de capitalización que especificó.</p>
+                                        <p class="container-results__description">TODAVIA NO EXISTE LA TABLA :) (coming soon) La siguiente tabla muestra una estimación de cuánto crecerán sus ahorros iniciales en el tiempo, según la tasa de interés y el cronograma de capitalización que especificó.</p>
                                         <p class="container-results__description">Recuerde que ciertos pequeños ajustes de cualquiera de esas variables pueden afectar el resultado. Restablezca la calculadora e ingrese cifras diferentes para que se muestren las diferentes situaciones.</p>
                                         <div class="container-results__chart"></div>
                                         <button class="container-results__btn"></button>

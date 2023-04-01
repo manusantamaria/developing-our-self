@@ -6,12 +6,11 @@
 @import './views/tools';
 @import './views/inicio';
 @import './views/cEffect';
-@import './utilities/variables';
 
 @media only screen and (min-width: 550px) {
     // INICIO
     .grid-container-inicio{
-        background-image: url("/images/editedBG1.png");
+        background-image: url("../images/editedBG1.png");
         background-position: 70% 80%;
         grid-template-rows: 12vh 98vh;
         .main-inicio-first{
@@ -89,11 +88,11 @@
                     }
                 }
                 &--btn1 {
-                    background-image: url("/images/back_arrow_5821.png");
+                    background-image: url("../images/back_arrow_5821.png");
                 }
                 
                 &--btn2 {
-                    background-image: url("/images/forwardarrow_haciaadelante_4836.png");
+                    background-image: url("../images/forwardarrow_haciaadelante_4836.png");
                 }
             }
         }
@@ -138,7 +137,28 @@
         }
     }
 }
-
+@media only screen and (min-width: 768px) {
+    // HOME
+    .container-home {
+        .main-home {
+            ::-webkit-scrollbar {
+                height: 4.5px;
+            }
+            &__recommended {
+                &--section{                  
+                    .main-home__recommended-boxes{
+                        &--box{
+                            margin: 0 2.5vw;
+                            .main-home__recommended--pic{
+                                width: 45vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (min-width: 1024px) {
     // INICIO
     .grid-container-inicio{
@@ -199,6 +219,29 @@
                 }
             }
             
+        }
+    }
+
+    // HOME
+    .container-home {
+        .bar-home{
+            &__btns{
+                justify-content: space-around
+            }
+        }
+        .main-home {
+            &__recommended {
+                &--section{                  
+                    .main-home__recommended-boxes{
+                        &--box{
+                            margin: 0 1.5vw;
+                            .main-home__recommended--pic{
+                                width: 30vw;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

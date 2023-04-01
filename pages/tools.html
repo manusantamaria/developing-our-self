@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- BOOTSTRAP -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
         <!-- CSS -->
         <link rel="stylesheet" href="../styles/style.css">
         <!-- Font Family -->
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
         <title>Developing our Self</title>
     
 </head>
@@ -20,46 +17,47 @@
     <header class="header">
         <div class="header__start">
             <div class="header__start--menu">
-                <a href="./home.html"><i class="fa-solid fa-bars fa-2x"></i></a>
+                <a href="./home.html"><i class="fa-solid fa-bars fa-xl"></i></a>
             </div>
             <div class="header__start--brand">
                 <a href="../index.html">DEVELOPING OUR SELF</a>
             </div>
         </div>
-        <div class="header__center">
-            <div class="header__search">
-                <div class="header__search--input search-div">
+        <!-- <div class="header__center"> -->
+            
+        <!-- </div> -->
+        <div class="header__end">
+            <!-- <div class="header__search"> -->
+                <!-- <div class="header__search--input search-div">
                     <input class="search__input" type="text" placeholder="Search a book" name="" id="">
-                </div>
+                </div> -->
                 <div class="header__search--btn search-div">
-                    <a href=""><lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#00008b">
+                    <a href=""><lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#00008b" style="width:20px;height:20px;top:2px">
                     </lord-icon></a>
                 </div>
-            </div>
-        </div>
-        <div class="header__end">
+            <!-- </div> -->
             <div class="header__end--notification end__btn">
                 <a href=""><lord-icon
-                    src="https://cdn.lordicon.com/psnhyobz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                    src="https://cdn.lordicon.com/psnhyobz.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px">
                 </lord-icon></a>
             </div>
             <div class="header__end--tool end__btn">
-                <a href=""><lord-icon
-                    src="https://cdn.lordicon.com/svbmmyue.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px;">
+                <a href="./tools.html"><lord-icon
+                    src="https://cdn.lordicon.com/svbmmyue.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px;">
                 </lord-icon></a>
             </div>
             <div class="header__end--user end__btn">
                 <!-- <a href=""><i class="fa-regular fa-user fa-lg"></i></a> -->
                 <a href="">
                     <lord-icon
-                    src="https://cdn.lordicon.com/bhfjfgqz.json" colors="primary:#00008b" trigger="hover" style="width:25px;height:25px;top:2px">
+                    src="https://cdn.lordicon.com/bhfjfgqz.json" colors="primary:#00008b" trigger="hover" style="width:20px;height:20px;top:2px">
                     </lord-icon>
                 </a>
             </div>
         </div>
     </header>
-    <div class="container-home">
-        <aside class="aside-home">
+    <div class="container-tools">
+        <!-- <aside class="aside-home">
             <ul class="aside-home__ul">
                 <li class="aside-home__li aside-home__li--fitness">
                     <a href=""><lord-icon
@@ -97,7 +95,6 @@
                         src="https://cdn.lordicon.com/fbdgkenc.json" trigger="hover" colors="primary:#00008b" style="width:25px;height:25px">
                     </lord-icon></i></a>
                     <p>Happiness & Success</p>
-                    <!-- Mindset will be here too -->
                 </li>
                 <li class="aside-home__li aside-home__li--productivity">
                     <a href=""><lord-icon
@@ -106,8 +103,9 @@
                     <p>Business & Leadership</p>
                 </li>
             </ul>
-        </aside>
+        </aside> -->
         <main class="main-tools">
+            <!-- Chgooose your favorites (coming soon) -->
             <div class="main-tools__favorite">
                 <h1 class="main-tools__favorite--h1">Your Favorites</h1>
                 <div class="main-tools__favorite--chosen"></div>
@@ -119,10 +117,11 @@
                         <lord-icon src="https://cdn.lordicon.com/nocovwne.json"trigger="hover"colors="primary:#00008b,secondary:#f6d794"style="width:12vw;height:18vh"></lord-icon>
                         <p class="main-tools__container--title">Documents</p>
                     </div>
-                    <!-- https://discord.gg/pCgGcmGD -->
                     <div class="main-tools__container--extension">
-                        <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json"trigger="hover"colors="primary:#00008b,secondary:#f6d794"style="width:12vw;height:18vh"></lord-icon>
-                        <p class="main-tools__container--title">Community</p>
+                        <a href="https://discord.gg/pCgGcmGD" target="_blank" rel="noopener noreferrer">
+                            <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json"trigger="hover"colors="primary:#00008b,secondary:#f6d794"style="width:12vw;height:18vh"></lord-icon>
+                            <p class="main-tools__container--title">Community</p>
+                        </a>
                     </div>
                     <div class="main-tools__container--extension">
                         <lord-icon src="https://cdn.lordicon.com/puvaffet.json" trigger="hover" colors="primary:#00008b,secondary:#f6d794"style="width:12vw;height:18vh"></lord-icon>
@@ -159,9 +158,8 @@
                 </div>
             </div>
         </main>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.3/sweetalert2.min.js" integrity="sha512-eN8dd/MGUx/RgM4HS5vCfebsBxvQB2yI0OS5rfmqfTo8NIseU+FenpNoa64REdgFftTY4tm0w8VMj5oJ8t+ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.3/sweetalert2.min.js" integrity="sha512-eN8dd/MGUx/RgM4HS5vCfebsBxvQB2yI0OS5rfmqfTo8NIseU+FenpNoa64REdgFftTY4tm0w8VMj5oJ8t+ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="../js/tools.js"></script>
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>

@@ -1,3 +1,94 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Call the local JSON file
+    const url = "../json/data.json"
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+    for (let i = 1; i <= 10; i++) {
+        const books = data.books[i];
+        const card = document.createElement('div');
+        card.classList.add('main-home__recommended-boxes--box');
+        card.innerHTML = `
+            <div class="main-home__recommended--pic">
+                <img class="main-home__recommended--pic-img" src="${books.img}" alt="${books.name}">
+            </div>
+            <div class="main-home__recommended--title">
+                <p class="main-home__recommended--title-p">${books.name}</p>
+            </div>
+        `;
+        document.querySelector(".main-home__recommended-boxes--books").appendChild(card);
+    }
+    for (let i = 1; i <= 10; i++) {
+        const yTChannels = data.yTChannels[i];
+        const card = document.createElement('div');
+        card.classList.add('main-home__recommended-boxes--box');
+        card.innerHTML = `
+            <div class="main-home__recommended--pic main-home__recommended--pic">
+                <img class="main-home__recommended--pic-img main-home__recommended--pic-img2" src="${yTChannels.img}" alt="${yTChannels.name}">
+            </div>
+            <div class="main-home__recommended--title">
+                <p class="main-home__recommended--title-p">${yTChannels.name}</p>
+            </div>
+        `;
+        document.querySelector(".main-home__recommended-boxes--yTChannels").appendChild(card);
+    }
+    for (let i = 1; i <= 9; i++) {
+        const podcast = data.podcasts[i];
+        const card = document.createElement('div');
+        card.classList.add('main-home__recommended-boxes--box');
+        card.innerHTML = `
+            <div class="main-home__recommended--pic main-home__recommended--pic">
+                <img class="main-home__recommended--pic-img main-home__recommended--pic-img2" src="${podcast.img}" alt="${podcast.name}">
+            </div>
+            <div class="main-home__recommended--title">
+                <p class="main-home__recommended--title-p">${podcast.name}</p>
+            </div>
+        `;
+        document.querySelector(".main-home__recommended-boxes--podcasts").appendChild(card);
+    }
+    for (let i = 1; i <= 5; i++) {
+        const course = data.courses[i];
+        const card = document.createElement('div');
+        card.classList.add('main-home__recommended-boxes--box');
+        card.innerHTML = `
+            <div class="main-home__recommended--pic">
+                <img class="main-home__recommended--pic-img" src="${course.img}" alt="${course.name}">
+            </div>
+            <div class="main-home__recommended--title">
+                <p class="main-home__recommended--title-p">${course.name}</p>
+            </div>
+        `;
+        document.querySelector(".main-home__recommended-boxes--courses").appendChild(card);
+    }
+    })
+    .catch(error => console.error(error));
+    
+    // More Information (coming soon)
+    // const box = document.querySelectorAll(".main-home__recommended-boxes--box")
+});
+
+
+// Choose your Preferences (coming soon)
+const barBtns = document.querySelectorAll(".bar-home__btns--btn");
+const asideBtns = document.querySelectorAll(".aside-home__li")
+barBtns.forEach(btn => {
+    let isStyled = false;
+    btn.addEventListener("click", function(e){
+        isStyled ? btn.setAttribute("style", "") : btn.setAttribute("style", "background-color:#ffe8b5;border-bottom: solid 1px #debe79");
+        isStyled = !isStyled;
+    });
+    });
+
+asideBtns.forEach(btn => {
+    let isStyled = false;
+    btn.addEventListener("click", function(e){
+        isStyled ? btn.setAttribute("style", "") : btn.setAttribute("style", "background-color:#f6d794");
+        isStyled = !isStyled;
+    });
+});
+
+// Carousel for inicio.js (coming soon) (used to be for this js)
+
 // const arrowLeft = document.querySelectorAll(".arrow-left")
 // const arrowRight = document.querySelectorAll(".arrow-right")
 
@@ -20,7 +111,6 @@
 //     ) : null ;
 // }
 
-    // CREO QUE NO SIRVE
 // const translate = (elem, px) => {
 //     if (elem.parentNode.classList.contains("bar-home__arrow")){
 //         checkSide(elem, px)
@@ -49,21 +139,3 @@
 
 // arrowLeft[4].addEventListener("click",(e)=>checkSide(e.target, counterE+=357.5))
 // arrowRight[4].addEventListener("click",(e)=>checkSide(e.target, counterE-=357.5))
-
-const barBtns = document.querySelectorAll(".bar-home__btns--btn");
-const asideBtns = document.querySelectorAll(".aside-home__li")
-barBtns.forEach(btn => {
-    let isStyled = false;
-    btn.addEventListener("click", function(e){
-        isStyled ? btn.setAttribute("style", "") : btn.setAttribute("style", "background-color:#ffe8b5;border-bottom: solid 1px #debe79");
-        isStyled = !isStyled;
-    });
-    });
-
-asideBtns.forEach(btn => {
-    let isStyled = false;
-    btn.addEventListener("click", function(e){
-        isStyled ? btn.setAttribute("style", "") : btn.setAttribute("style", "background-color:#f6d794");
-        isStyled = !isStyled;
-    });
-});

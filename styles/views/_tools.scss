@@ -1,13 +1,11 @@
-.container-home{
-    // display: grid;
-    // grid-template-areas:"aside main";
+.container-tools{
+    display: grid;
+    overflow: hidden;
+    margin-top: 5vh ;
     // MAIN
     .main-tools {
-        grid-area: main;
-        width: 88.3vw;
-        position: relative;
-        margin-left: 8vw;
-        margin-top: 2vh;
+        // width: 88.3vw;
+        margin: 2vh 4vw;
         overflow: hidden;
         &__favorite{
             &--h1{
@@ -34,12 +32,13 @@
                 &--extension{
                     margin: 3vh 2vw;
                     border-radius: 7px;
+                    z-index: 100;
                     .main-tools__container--title{
                         text-align: center;
                         color: #00008b;
                     }
                     &:hover{
-                        background-color: #f6d794;
+                        background-color: #fdefd1;
                     }
                 }
             }
