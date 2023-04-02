@@ -68,7 +68,7 @@
 }
 .grid-container-sign .main-Sign__info {
   display: none;
-  background-image: url("../../images/mainMountain1.png");
+  background-image: url("https://manusantamaria.github.io/developing-our-self/images/mainMountain1.png");
   background-size: cover;
   background-position: 50% 10%;
   height: 100%;
@@ -373,7 +373,7 @@
 .grid-container-inicio {
   display: grid;
   grid-template-rows: 10vh 90vh;
-  background-image: url("../../developing-our-self/images/inicioBackground.png");
+  background-image: url("https://manusantamaria.github.io/developing-our-self/images/inicioBackground.png");
   background-size: cover;
   background-position: 50% 80%;
 }
@@ -654,10 +654,10 @@
     scale: 1.05;
   }
   .main-inicio-second__options .main-inicio-second__arrow--btn1 {
-    background-image: url("../images/back_arrow_5821.png");
+    background-image: url("https://manusantamaria.github.io/developing-our-self/images/back_arrow_5821.png");
   }
   .main-inicio-second__options .main-inicio-second__arrow--btn2 {
-    background-image: url("../images/forwardarrow_haciaadelante_4836.png");
+    background-image: url("https://manusantamaria.github.io/developing-our-self/images/forwardarrow_haciaadelante_4836.png");
   }
   .main-inicio-second .main-inicio-second__options .main-inicio-second__boxes .main-inicio-second__box--health {
     display: grid;
